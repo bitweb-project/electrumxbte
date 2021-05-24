@@ -30,9 +30,9 @@ setuptools.setup(
     author='Electrum developers',
     author_email='electrumdev@gmail.com',
     license='MIT Licence',
-    url='https://github.com/spesmilo/electrumx',
+    url='https://github.com/bitweb-project/electrumx',
     long_description='Server implementation for the Electrum protocol',
-    download_url=('https://github.com/spesmilo/electrumX/archive/'
+    download_url=('https://github.com/bitweb-project/electrumX/archive/'
                   f'{version}.tar.gz'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
