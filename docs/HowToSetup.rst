@@ -11,7 +11,7 @@ Prepare::
 
   python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash bitweb_yespower
 
-  git clone https://github.com/bitweb_project/electrumx /opt/electrumx
+  git clone https://github.com/bitweb-project/electrumx /opt/electrumx
   
   or 
   
