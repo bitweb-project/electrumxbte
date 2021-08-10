@@ -51,7 +51,7 @@ Create and edit config::
 
 Config Example::
 
-  COIN = LitecoinFinance
+  COIN = Bitweb
   DB_DIRECTORY = /opt/electrumxbte/db
   DAEMON_URL = http://RPCUSER:RPCPASSWORD@IP:RPCPORT/
   SERVICES = tcp://:30001,rpc://:8001,ssl://:30002
