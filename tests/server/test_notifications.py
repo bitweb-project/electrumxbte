@@ -1,6 +1,6 @@
 import pytest
 
-from electrumx.server.controller import Notifications
+from electrumxbte.server.controller import Notifications
 
 
 @pytest.mark.asyncio

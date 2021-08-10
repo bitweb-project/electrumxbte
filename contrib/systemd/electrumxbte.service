@@ -1,0 +1,13 @@
+[Unit]
+Description=ElectrumxBte
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/electrumxbte.conf
+ExecStart=/usr/local/bin/electrumxbte_server
+User=electrumxbte
+LimitNOFILE=8192
+TimeoutStopSec=30min
+
+[Install]
+WantedBy=multi-user.target

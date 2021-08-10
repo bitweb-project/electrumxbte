@@ -19,7 +19,7 @@ Features
   clients' requests and notifications, nor the processing of incoming
   blocks and mempool updates.
 - Daemon failover.  More than one daemon can be specified, and
-  ElectrumX will failover round-robin style if the current one fails
+  ElectrumXBTE will failover round-robin style if the current one fails
   for any reason.
 - Peer discovery protocol removes need for IRC
 - Coin abstraction makes compatible altcoin and testnet support easy.
@@ -27,7 +27,7 @@ Features
 Implementation
 ==============
 
-ElectrumX does not do any pruning or throwing away of history.  I want
+ElectrumXBTE does not do any pruning or throwing away of history.  I want
 to retain this property for as long as it is feasible, and it appears
 efficiently achievable for the foreseeable future with plain Python.
 
@@ -36,12 +36,12 @@ blockchain indexer:
 
 - aggressive caching and batching of DB writes
 - more compact and efficient representation of UTXOs, address index,
-  and history.  Electrum Server stores full transaction hash and
+  and history.  ElectrumBte Server stores full transaction hash and
   height for each UTXO, and does the same in its pruned history.  In
-  contrast ElectrumX just stores the transaction number in the linear
-  history of transactions.  ElectrumX can determine block
+  contrast ElectrumXBTE just stores the transaction number in the linear
+  history of transactions.  ElectrumXBTE can determine block
   height from a simple binary search of tx counts stored on disk.
-  ElectrumX stores historical transaction hashes in a linear array on
+  ElectrumXBTE stores historical transaction hashes in a linear array on
   disk.
 - placing static append-only metadata indexable by position on disk
   rather than in levelDB.  It would be nice to do this for histories
@@ -52,8 +52,8 @@ blockchain indexer:
 - better choice of Python data structures giving lower memory usage as
   well as faster traversal
 - leveraging asyncio for asynchronous prefetch of blocks to mostly
-  eliminate CPU idling.  As a Python program ElectrumX is unavoidably
+  eliminate CPU idling.  As a Python program ElectrumXBTE is unavoidably
   single-threaded in its essence; we must keep that CPU core busy.
 
-Python's :mod:`asyncio` means ElectrumX has no (direct) use for threads
+Python's :mod:`asyncio` means ElectrumXBTE has no (direct) use for threads
 and associated complications.

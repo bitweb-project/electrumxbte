@@ -7,7 +7,7 @@ Authors
 
   Original creator, past maintainer.
 
-* Electrum developers
+* ElectrumBte developers
 
   Current maintainers.
 

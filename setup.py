@@ -2,9 +2,9 @@ import setuptools
 version = '1.16.0'
 
 setuptools.setup(
-    name='e-x',
+    name='e-x-b',
     version=version,
-    scripts=['electrumx_server', 'electrumx_rpc', 'electrumx_compact_history'],
+    scripts=['electrumxbte_server', 'electrumxbte_rpc', 'electrumxbte_compact_history'],
     python_requires='>=3.7',
     install_requires=['aiorpcX[ws]>=0.18.5,<0.19', 'attrs',
                       'plyvel', 'pylru', 'aiohttp>=3.3,<4'],
@@ -25,14 +25,14 @@ setuptools.setup(
         'bitweb-yespower': ['bitweb-yespower'],
         'cpupower': ['cpupower'],
     },
-    packages=setuptools.find_packages(include=('electrumx*',)),
-    description='ElectrumX Server',
-    author='Electrum developers',
+    packages=setuptools.find_packages(include=('electrumxbte*',)),
+    description='ElectrumXBTE Server',
+    author='ElectrumBte developers',
     author_email='electrumdev@gmail.com',
     license='MIT Licence',
-    url='https://github.com/bitweb-project/electrumx',
-    long_description='Server implementation for the Electrum protocol',
-    download_url=('https://github.com/bitweb-project/electrumX/archive/'
+    url='https://github.com/mraksoll4/electrumxbte',
+    long_description='Server implementation for the ElectrumBte protocol',
+    download_url=('https://github.com/mraksoll4/electrumxbte/archive/'
                   f'{version}.tar.gz'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',

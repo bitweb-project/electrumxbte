@@ -1,4 +1,4 @@
-# Copyright (c) 2017, the ElectrumX authors
+# Copyright (c) 2017, the ElectrumXBTE authors
 #
 # All rights reserved.
 #
@@ -26,7 +26,7 @@
 
 import pytest
 
-import electrumx.lib.coins as coins
+import electrumxbte.lib.coins as coins
 
 addresses = [
     (coins.BitcoinCash, "13xDKJbjh4acmLpNVr6Lc9hFcXRr9fyt4x",

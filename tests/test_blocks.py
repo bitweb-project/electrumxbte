@@ -1,4 +1,4 @@
-# Copyright (c) 2017, the ElectrumX authors
+# Copyright (c) 2017, the ElectrumXBTE authors
 #
 # All rights reserved.
 #
@@ -30,8 +30,8 @@ from binascii import unhexlify
 
 import pytest
 
-from electrumx.lib.coins import Coin
-from electrumx.lib.hash import hex_str_to_hash
+from electrumxbte.lib.coins import Coin
+from electrumxbte.lib.hash import hex_str_to_hash
 
 BLOCKS_DIR = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), 'blocks')

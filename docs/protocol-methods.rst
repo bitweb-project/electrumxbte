@@ -800,7 +800,7 @@ peers lists.  It should not be used by wallet clients.
 server.banner
 =============
 
-Return a banner to be shown in the Electrum console.
+Return a banner to be shown in the ElectrumBte console.
 
 **Signature**
 
@@ -814,7 +814,7 @@ Return a banner to be shown in the Electrum console.
 
   ::
 
-     "Welcome to Electrum!"
+     "Welcome to ElectrumBte!"
 
 
 server.donation_address
@@ -897,7 +897,7 @@ Return a list of features and services supported by the server.
   * *protocol_max*
   * *protocol_min*
 
-    Strings that are the minimum and maximum Electrum protocol
+    Strings that are the minimum and maximum ElectrumBte protocol
     versions this server speaks.  Example: "1.1".
 
   * *pruning*
@@ -916,7 +916,7 @@ Return a list of features and services supported by the server.
       "protocol_max": "1.0",
       "protocol_min": "1.0",
       "pruning": null,
-      "server_version": "ElectrumX 1.0.17",
+      "server_version": "ElectrumXBTE 1.0.17",
       "hash_function": "sha256"
   }
 
@@ -1009,11 +1009,11 @@ Only the first :func:`server.version` message is accepted.
 
 **Example**::
 
-  server.version("Electrum 3.0.6", ["1.1", "1.2"])
+  server.version("ElectrumBte 3.0.6", ["1.1", "1.2"])
 
 **Example Result**::
 
-  ["ElectrumX 1.2.1", "1.2"]
+  ["ElectrumXBTE 1.2.1", "1.2"]
 
 
 Masternode methods (Dash and compatible coins)

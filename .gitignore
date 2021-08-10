@@ -8,7 +8,7 @@
 docs/_build
 /build
 /dist
-/electrumx.egg-info
+/electrumxbte.egg-info
 /e_x.egg-info
 .vscode/
 .mypy_cache/

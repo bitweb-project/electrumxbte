@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from electrumx.lib import util, tx
+from electrumxbte.lib import util, tx
 
 
 def test_cachedproperty():

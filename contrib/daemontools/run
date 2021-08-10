@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Launching ElectrumX server..."
+echo "Launching ElectrumXBTE server..."
 USERNAME=$(envdir ./env printenv USERNAME)
-ELECTRUMX=$(envdir ./env printenv ELECTRUMX)
-ulimit -n 4000 && exec 2>&1 envdir ./env envuidgid $USERNAME python3 $ELECTRUMX
+ELECTRUMXBTE=$(envdir ./env printenv ELECTRUMXBTE)
+ulimit -n 4000 && exec 2>&1 envdir ./env envuidgid $USERNAME python3 $ELECTRUMXBTE

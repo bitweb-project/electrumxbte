@@ -21,15 +21,15 @@ all the others.  Manages resource usage.
 LocalRPC
 --------
 
-Handles local JSON RPC connections querying ElectrumX server state.
-Started when the ElectrumX process starts.
+Handles local JSON RPC connections querying ElectrumXBTE server state.
+Started when the ElectrumXBTE process starts.
 
-ElectrumX
+ElectrumXBTE
 ---------
 
-Handles JSON Electrum client connections over TCP or SSL.  One
+Handles JSON ElectrumBte client connections over TCP or SSL.  One
 instance per client session.  Should be the only component concerned
-with the details of the Electrum wire protocol.
+with the details of the ElectrumBte wire protocol.
 
 Not started until the Block Processor has caught up with bitcoind.
 

@@ -9,29 +9,25 @@ Prepare::
 
   apt-get install python3-setuptools python3-multidict python3.7 python3.7-dev libleveldb-dev python3-setuptools python3-multidict gcc g++ libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev build-essential python3-pip git
 
-  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash bitweb_yespower
+  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash
 
-  git clone https://github.com/bitweb-project/electrumx /opt/electrumx
-  
-  or 
-  
-  git clone https://github.com/spesmilo/electrumx /opt/electrumx
+  git clone https://github.com/mraksoll4/electrumxbte /opt/electrumxbte
 
-  cd /opt/electrumx
+  cd /opt/electrumxbte
 
   mkdir -p db
 
-  groupadd -r electrumx
+  groupadd -r electrumxbte
 
-  useradd -r -m -d /var/lib/electrumx -k /dev/null -s /bin/false -g electrumx electrumx
+  useradd -r -m -d /var/lib/electrumxbte -k /dev/null -s /bin/false -g electrumxbte electrumxbte
 
-  chown electrumx:electrumx /opt/electrumx/db
+  chown electrumxbte:electrumxbte /opt/electrumxbte/db
 
-  cp contrib/systemd/electrumx.service /etc/systemd/system/
+  cp contrib/systemd/electrumxbte.service /etc/systemd/system/
 
-  ln -sf /opt/electrumx/electrumx_server.py /usr/local/bin/electrumx_server.py
+  ln -sf /opt/electrumxbte/electrumxbte_server.py /usr/local/bin/electrumxbte_server.py
 
-  ln -sf /opt/electrumx/electrumx.conf /etc/electrumx.conf
+  ln -sf /opt/electrumxbte/electrumxbte.conf /etc/electrumxbte.conf
 
 Create SSL certificat::
 
@@ -45,33 +41,33 @@ Create SSL certificat::
 
 Give access to ssl folser and cert::
 
-  chown -R electrumx:electrumx /opt/electrumx/ssl
+  chown -R electrumxbte:electrumxbte /opt/electrumxbte/ssl
 
   cd ..
 
 Create and edit config::
 
-  nano /opt/electrumx/electrumx.conf
+  nano /opt/electrumxbte/electrumxbte.conf
 
 Config Example::
 
-  COIN = Bitweb
-  DB_DIRECTORY = /opt/electrumx/db
+  COIN = LitecoinFinance
+  DB_DIRECTORY = /opt/electrumxbte/db
   DAEMON_URL = http://RPCUSER:RPCPASSWORD@IP:RPCPORT/
-  SERVICES = tcp://:10001,rpc://:8001,ssl://:10002
+  SERVICES = tcp://:30001,rpc://:8001,ssl://:30002
   EVENT_LOOP_POLICY = uvloop
   PEER_DISCOVERY = self
   INITIAL_CONCURRENT = 50
   COST_SOFT_LIMIT = 10000
   COST_HARD_LIMIT = 100000
   BANDWIDTH_UNIT_COST = 10000
-  SSL_CERTFILE = /opt/electrumx/ssl/server.crt
-  SSL_KEYFILE = /opt/electrumx/ssl/server.key
+  SSL_CERTFILE = /opt/electrumxbte/ssl/server.crt
+  SSL_KEYFILE = /opt/electrumxbte/ssl/server.key
 
 Give access to config::
 
-  chown root:electrumx /opt/electrumx/electrumx.conf
-  chmod 640 /opt/electrumx/electrumx.conf
+  chown root:electrumxbte /opt/electrumxbte/electrumxbte.conf
+  chmod 640 /opt/electrumxbte/electrumxbte.conf
 
 Install server::
 
@@ -80,16 +76,16 @@ Install server::
 
 Start::
 
-  systemctl start electrumx
+  systemctl start electrumxbte
 
 Stop::
 
-  systemctl stop electrumx
+  systemctl stop electrumxbte
 
 Autorun::
 
-  systemctl enable electrumx
+  systemctl enable electrumxbte
 
 Logs::
 
-  journalctl -u electrumx -f
+  journalctl -u electrumxbte -f

@@ -17,7 +17,7 @@ is encouraged for version 1.0 but not required.
   setting the `jsonrpc
   <http://www.jsonrpc.org/specification#request_object>`_ member of
   its messages to ``"2.0"`` if it supports the version 2.0 protocol in
-  its entirety.  ElectrumX does and will expect clients advertizing so
+  its entirety.  ElectrumXBTE does and will expect clients advertizing so
   to function correctly.  Those that do not will be disconnected and
   possibly blacklisted.
 
@@ -168,15 +168,15 @@ string is empty because there are no transactions.
 Block Headers
 -------------
 
-Originally Electrum clients would download all block headers and
+Originally ElectrumBte clients would download all block headers and
 verify the chain of hashes and header difficulty in order to confirm
 the merkle roots with which to check transaction inclusion.
 
 With the BTC and BCH chains now past height 500,000, the headers form
 over 40MB of raw data which becomes 80MB if downloaded as text from
-Electrum servers.  The situation is worse for testnet and coins with
+ElectrumBte servers.  The situation is worse for testnet and coins with
 more frequent blocks.  Downloading and verifying all this data on
-initial use would take several minutes, during which Electrum was
+initial use would take several minutes, during which ElectrumBte was
 non-responsive.
 
 To facilitate a better experience for SPV clients, particularly on
@@ -201,5 +201,5 @@ and confirm the returned roots match.
 
 .. note:: with 500,000 headers of 80 bytes each, a naïve server
   implementation would require hashing approximately 88MB of data to
-  provide a single merkle proof.  ElectrumX implements an optimization
+  provide a single merkle proof.  ElectrumXBTE implements an optimization
   such that it hashes only approximately 180KB of data per proof.

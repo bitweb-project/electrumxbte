@@ -35,13 +35,12 @@ install:
   - pip install x16rv2_hash
   - pip install git+https://github.com/VerusCoin/verushashpy
   - pip install bell-yespower
-  - pip install bitweb-yespower
   - pip install cpupower
   - pip install kawpow
 # command to run tests
 script:
-  - pytest --cov=electrumx
-  - pycodestyle --max-line-length=100 electrumx/server/*.py electrumx/lib/*.py *.py
+  - pytest --cov=electrumxbte
+  - pycodestyle --max-line-length=100 electrumxbte/server/*.py electrumxbte/lib/*.py *.py
   - sh -c "cd docs && make html"
 # Dont report coverage from nightly
 after_success:
