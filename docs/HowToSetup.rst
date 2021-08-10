@@ -11,7 +11,7 @@ Prepare::
 
   python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash
 
-  git clone https://github.com/mraksoll4/electrumxbte /opt/electrumxbte
+  git clone https://github.com/bitweb-project/electrumxbte /opt/electrumxbte
 
   cd /opt/electrumxbte
 

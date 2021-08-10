@@ -22,7 +22,7 @@ ElectrumBte server network runs ElectrumXBTE.
 
 Documentation
 =============
-Fast setup `Setup <https://github.com/mraksoll4/electrumxbte/blob/master/docs/HowToSetup.rst>`_.
+Fast setup `Setup <https://github.com/bitweb-project/electrumxbte/blob/master/docs/HowToSetup.rst>`_.
 
 See `readthedocs <https://electrumx-spesmilo.readthedocs.io/>`_.
 

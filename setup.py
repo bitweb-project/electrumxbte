@@ -30,9 +30,9 @@ setuptools.setup(
     author='ElectrumBte developers',
     author_email='electrumdev@gmail.com',
     license='MIT Licence',
-    url='https://github.com/mraksoll4/electrumxbte',
+    url='https://github.com/bitweb-project/electrumxbte',
     long_description='Server implementation for the ElectrumBte protocol',
-    download_url=('https://github.com/mraksoll4/electrumxbte/archive/'
+    download_url=('https://github.com/bitweb-project/electrumxbte/archive/'
                   f'{version}.tar.gz'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',

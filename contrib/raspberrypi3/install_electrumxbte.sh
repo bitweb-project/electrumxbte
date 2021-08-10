@@ -22,6 +22,6 @@ sudo apt-get install git
 sudo pip3 install plyvel
 
 # install electrumxbte
-git clone https://github.com/mraksoll4/electrumxbte.git
+git clone https://github.com/bitweb-project/electrumxbte.git
 cd electrumxbte
 sudo python3 setup.py install
