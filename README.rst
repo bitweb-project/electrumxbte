@@ -1,7 +1,7 @@
-.. image:: https://travis-ci.org/spesmilo/electrumxbte.svg?branch=master
-    :target: https://travis-ci.org/spesmilo/electrumxbte
-.. image:: https://coveralls.io/repos/github/spesmilo/electrumxbte/badge.svg
-    :target: https://coveralls.io/github/spesmilo/electrumxbte
+.. image:: https://travis-ci.org/spesmilo/electrumx.svg?branch=master
+    :target: https://travis-ci.org/spesmilo/electrumx
+.. image:: https://coveralls.io/repos/github/spesmilo/electrumx/badge.svg
+    :target: https://coveralls.io/github/spesmilo/electrumx
 
 ===============================================
 ElectrumXBTE - Reimplementation of electrum-server
@@ -11,7 +11,7 @@ ElectrumXBTE - Reimplementation of electrum-server
   :Language: Python (>= 3.7)
   :Original Author: Neil Booth
 
-This project is a fork of `kyuupichan/electrumxbte <https://github.com/kyuupichan/electrumxbte>`_.
+This project is a fork of `kyuupichan/electrumx <https://github.com/kyuupichan/electrumx>`_.
 The original author dropped support for Bitcoin, which we intend to keep.
 
 ElectrumXBTE allows users to run their own ElectrumBte server. It connects to your
@@ -24,5 +24,5 @@ Documentation
 =============
 Fast setup `Setup <https://github.com/mraksoll4/electrumxbte/blob/master/docs/HowToSetup.rst>`_.
 
-See `readthedocs <https://electrumxbte-spesmilo.readthedocs.io/>`_.
+See `readthedocs <https://electrumx-spesmilo.readthedocs.io/>`_.
 
