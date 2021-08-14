@@ -9,7 +9,7 @@ Prepare::
 
   apt-get install python3-setuptools python3-multidict python3.7 python3.7-dev libleveldb-dev python3-setuptools python3-multidict gcc g++ libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev build-essential python3-pip git
 
-  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash
+  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash bitweb_yespower
 
   git clone https://github.com/bitweb-project/electrumxbte /opt/electrumxbte
 
