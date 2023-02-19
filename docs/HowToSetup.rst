@@ -11,7 +11,9 @@ Prepare::
 
   apt-get install python3-setuptools python3-multidict python3.7 python3.7-dev libleveldb-dev python3-setuptools python3-multidict gcc g++ libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev build-essential python3-pip python3.7-distutils git
 
-  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash bitweb_yespower
+  python3.7 -m pip install aiohttp pylru plyvel Cython uvloop quark_hash bitweb_yespower==1.0.5
+
+  important after enable GPU algo , use version bitweb_yespower==1.0.5 ( YescryptR16 )
 
   git clone https://github.com/bitweb-project/electrumxbte /opt/electrumxbte
 
